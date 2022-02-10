@@ -1,0 +1,18 @@
+name: vertical_tabs_flutter
+description: A vertical tabs package for flutter framework.
+version: 1.0.0
+homepage: "https://github.com/gauravmehta13/vertical_tabs_flutter"
+
+environment:
+  sdk: ">=2.16.1 <3.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^1.0.4
+flutter:
