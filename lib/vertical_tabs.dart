@@ -24,6 +24,7 @@ class VerticalTabs extends StatefulWidget {
   final double tabsElevation;
   final Function(int tabIndex)? onSelect;
   final Color? backgroundColor;
+  final MaterialType materialType;
 
   const VerticalTabs(
       {Key? key,
@@ -46,7 +47,8 @@ class VerticalTabs extends StatefulWidget {
       this.tabsShadowColor = Colors.black54,
       this.tabsElevation = 2.0,
       this.onSelect,
-      this.backgroundColor})
+      this.backgroundColor,
+      this.materialType = MaterialType.canvas})
       : assert(tabs.length == contents.length),
         super(key: key);
 
@@ -214,6 +216,7 @@ class _VerticalTabsState extends State<VerticalTabs> with TickerProviderStateMix
                     elevation: widget.tabsElevation,
                     shadowColor: widget.tabsShadowColor,
                     shape: const BeveledRectangleBorder(),
+                    type: widget.materialType,
                   ),
                   Expanded(
                     child: PageView.builder(
